@@ -1,0 +1,21 @@
+{
+  "name": "teste-dot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "git+https://github.com/MuriloRibas/teste-dot.git",
+  "author": "MuriloRibas <muriloribasss@hotmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MuriloRibas/teste-dot/issues"
+  },
+  "homepage": "https://github.com/MuriloRibas/teste-dot#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-connect": "^5.7.0",
+    "gulp-open": "^3.0.1"
+  }
+}
