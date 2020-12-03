@@ -7,7 +7,7 @@ const configs = {
         app: {
             html: './app/*.html',
             css: './app/css/*.css',
-            images: './app/images/*.png'
+            images: './app/images/*.jpg'
         },
         dist: './dist'
     }
