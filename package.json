@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run poststart && gulp",
-    "poststart": "npm prune --production",
+    "start": "mkdir dist && gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "git+https://github.com/MuriloRibas/teste-dot.git",
