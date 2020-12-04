@@ -22,7 +22,7 @@ gulp.task('connect', () => {
 });
 
 gulp.task('html', () => {
-    return gulp.src(configs.paths.app.html)
+    return gulp.src(configs.paths.app.html, {allowEmpty: true})
         .pipe(gulp.dest(configs.paths.dist))
         .pipe(connect.reload())
 });
@@ -39,7 +39,7 @@ gulp.task('images', () => {
 });
 
 gulp.task('open', () => {
-    return gulp.src('./dist/index.html')
+    return gulp.src('./dist/index.html', {allowEmpty: true})
         .pipe(open({ uri: 'http://localhost:3001' }))
 });
 
