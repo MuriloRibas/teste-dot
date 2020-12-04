@@ -15,7 +15,7 @@ const configs = {
 
 gulp.task('connect', () => {
     connect.server({
-        root: 'dist',
+        root: './dist',
         port: 3001,
         livereload: true
     })
@@ -35,7 +35,7 @@ gulp.task('css', () => {
 
 gulp.task('images', () => {
     return gulp.src(configs.paths.app.images)
-        .pipe(gulp.dest('dist/images'));
+        .pipe(gulp.dest('./dist/images'));
 });
 
 gulp.task('open', () => {
