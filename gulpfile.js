@@ -5,9 +5,9 @@ const open      = require('gulp-open');
 const configs = {
     paths: {
         app: {
-            html: './app/*.html',
-            css: './app/css/*.css',
-            images: './app/images/*.jpg'
+            html: '/app/*.html',
+            css: '/app/css/*.css',
+            images: '/app/images/*.jpg'
         },
         dist: './dist'
     }
