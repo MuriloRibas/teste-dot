@@ -38,11 +38,6 @@ gulp.task('images', () => {
         .pipe(gulp.dest('./dist/images'));
 });
 
-gulp.task('open', () => {
-    return gulp.src('./dist/index.html', {allowEmpty: true})
-        .pipe(open({ uri: 'http://localhost:3001' }))
-});
-
 gulp.task('watch', () => {
     gulp.watch(configs.paths.app.html, gulp.series('html'));
     gulp.watch(configs.paths.app.css, gulp.series('css'));
@@ -50,4 +45,4 @@ gulp.task('watch', () => {
 });
 
 
-gulp.task('default', gulp.parallel('html', 'css', 'images', 'connect', 'open', 'watch' ));
+gulp.task('default', gulp.parallel('html', 'css', 'images', 'connect', 'watch' ));
