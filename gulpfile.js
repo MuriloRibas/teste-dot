@@ -9,7 +9,7 @@ const configs = {
             css: '/app/css/*.css',
             images: '/app/images/*.jpg'
         },
-        dist: './dist'
+        dist: '/dist'
     }
 }
 
