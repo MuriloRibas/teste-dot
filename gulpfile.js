@@ -39,7 +39,7 @@ gulp.task('images', () => {
 });
 
 gulp.task('open', () => {
-    gulp.src('./dist/index.html')
+    return gulp.src('./dist/index.html')
         .pipe(open({ uri: 'http://localhost:3001' }))
 });
 
