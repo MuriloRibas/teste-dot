@@ -5,11 +5,11 @@ const open      = require('gulp-open');
 const configs = {
     paths: {
         app: {
-            html: '/app/*.html',
-            css: '/app/css/*.css',
-            images: '/app/images/*.jpg'
+            html: './app/*.html',
+            css: './app/css/*.css',
+            images: './app/images/*.jpg'
         },
-        dist: '/dist'
+        dist: './dist'
     }
 }
 
@@ -39,7 +39,7 @@ gulp.task('images', () => {
 });
 
 gulp.task('open', () => {
-    gulp.src('dist/index.html')
+    gulp.src('./dist/index.html')
         .pipe(open({ uri: 'http://localhost:3001' }))
 });
 
