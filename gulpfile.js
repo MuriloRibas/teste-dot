@@ -16,7 +16,8 @@ const configs = {
 gulp.task('connect', () => {
     connect.server({
         root: './dist',
-        port: process.env.PORT,
+        port: 5000,
+        // port: process.env.PORT,
         livereload: true
     })
 });
