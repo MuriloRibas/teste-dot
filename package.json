@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_MODULES_CACHE=false gulp",
+    "start": "PORT=5000 NODE_ENV=production gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "git+https://github.com/MuriloRibas/teste-dot.git",
