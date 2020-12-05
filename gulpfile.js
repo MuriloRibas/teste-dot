@@ -47,4 +47,4 @@ gulp.task('watch', () => {
 
 gulp.task('default', gulp.parallel('html', 'css', 'images', 'connect', 'watch' ));
 
-gulp.task('heroku:prod', ['default']);
+gulp.task('heroku:prod',gulp.series('default'));
